@@ -49,4 +49,6 @@ docker run -t -p 8082:8082 --name cms-springboot --link cms-mysql:mysql -d pilan
 
 ## Working Screenshot
 Go to:- [http://loaclhost:8082](http://loaclhost:8082)\
+username- admin\
+password- admin\
 ![ClassRoom-Managament-System](src/main/webapp/images/classroom-IIITB.png)
