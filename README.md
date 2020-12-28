@@ -33,9 +33,20 @@ docker pull mysql:5.7.29
 ### create cms-mysql container
 docker run --name cms-mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=cms_db -e MYSQL_USER=cms_user -e MYSQL_PASSWORD=cms_password -d mysql:5.7.29
 
-## Springboot ContainerSetup
+## Springboot ContainerSetup to build project 
 ### build cms-springboot docker image
 docker build -t cms-springboot .
 
 ### create cms-springboot container from docker image
 docker run -t -p 8082:8082 --name cms-springboot --link cms-mysql:mysql -d cms-springboot
+
+## Springboot ContainrerSetup without building Project
+## pull the springboot-cms docker image from docker hub
+docker pull pilaniya1337/cms
+
+## create cms-springboot container from docker image
+docker run -t -p 8082:8082 --name cms-springboot --link cms-mysql:mysql -d pilaniya1337/cms
+
+## Working Screenshot
+Go to:- [http://loaclhost:8082](http://loaclhost:8082)
+![ClassRoom-Managament-System] (/src/main/webapp/images/classroom-IITB.png)
