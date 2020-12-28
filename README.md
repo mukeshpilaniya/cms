@@ -41,12 +41,12 @@ docker build -t cms-springboot .
 docker run -t -p 8082:8082 --name cms-springboot --link cms-mysql:mysql -d cms-springboot
 
 ## Springboot ContainrerSetup without building Project
-## pull the springboot-cms docker image from docker hub
+### pull the springboot-cms docker image from docker hub
 docker pull pilaniya1337/cms
 
-## create cms-springboot container from docker image
+### create cms-springboot container from docker image
 docker run -t -p 8082:8082 --name cms-springboot --link cms-mysql:mysql -d pilaniya1337/cms
 
 ## Working Screenshot
-Go to:- [http://loaclhost:8082](http://loaclhost:8082)
-![ClassRoom-Managament-System] (/src/main/webapp/images/classroom-IITB.png)
+Go to: [http://loaclhost:8082](http://loaclhost:8082)\
+![ClassRoom-Managament-System](/src/main/webapp/images/classroom-IITB.png)
