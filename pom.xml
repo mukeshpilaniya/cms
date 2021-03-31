@@ -16,7 +16,7 @@
 	<packaging>war</packaging>
 
 	<properties>
-		<sonar.sources>src/main/java</sonar.sources>
+		<sonar.sources>src/main/java/com/spe/ClassroomManagementSystem/</sonar.sources>
 		<sonar.projectKey>mukeshpilaniya_cms</sonar.projectKey>
 		<sonar.organization>pilaniya</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
