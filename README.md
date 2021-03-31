@@ -47,7 +47,6 @@ docker pull pilaniya1337/cms
 ### create cms-springboot container from docker image
 docker run -t -p 8082:8082 --name cms-springboot --link cms-mysql:mysql -d pilaniya1337/cms
 
-
 ## Working Screenshot
 Go to:- [http://loaclhost:8082](http://loaclhost:8082)\
 username- admin\
