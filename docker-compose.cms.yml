@@ -9,7 +9,7 @@ services:
       - "cms-mysql"
 
   cms-mysql:
-    image: "mysql:5.7.29"
+    image: "mysql:latest"
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=cms_db
