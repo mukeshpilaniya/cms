@@ -1,0 +1,17 @@
+version: "3.6"
+
+services:
+  cms-springboot:
+    image: "pilaniya1337/cms"
+    ports:
+      - "8082:8082"
+
+  cms-mysql:
+    image: "mysql:5.7.29"
+    depends_on:
+      - "cms-springboot"
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=cms_db
+      - MYSQL_USER=cms_user
+      - MYSQL_PASSWORD=cms_password
